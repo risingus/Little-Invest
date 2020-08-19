@@ -1,0 +1,135 @@
+@primary-color: #4455DD;
+@background-primary-color: #ffffff;
+@background-secondary-color: #F2F2F2;
+@text-primary-color: #000000;
+@text-secondary-color: #565656;
+@button-text-color: #f2f2f2;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;;
+}
+
+button{
+    background: @primary-color;
+    border: none;
+    color: @button-text-color;
+    border-radius: .2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: @text-primary-color;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+html, body {
+    background: @background-primary-color;
+}
+
+header img{
+    height: 1.5rem;
+    margin-left: 3rem;
+}
+
+header{
+    width: 100%;
+    background: @background-secondary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 5rem;
+ 
+}
+
+.menu li button{
+    margin-right: 3rem;
+    height: 2rem;
+    width: 6rem;
+}
+
+.invest-now {
+    margin-top: 2rem;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.invest-now h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    line-height: 3.5rem;
+    word-spacing: .8rem;
+    margin-left: 4rem;
+}
+
+.invest-now button{
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 6rem;
+    font-size: 1rem;
+    margin-left: 4rem;
+}
+
+.invest-now img{
+    height: 20rem;
+    margin-right: 4rem;
+}
+
+
+.banks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: @primary-color;
+    height: 15rem;
+}
+
+.proffits {
+    background: @background-primary-color;
+    height: 10rem;
+    width: 15rem;
+    border-radius: .4rem;
+    border: 1px @primary-color;
+
+}
+
+.proffits p{
+    margin-top: .7rem;
+    margin-left: 1rem;
+}
+
+.proffits button{
+  height: 2rem;
+  width: 11rem;
+  margin-top: .8rem;
+  margin-left: 2rem;
+
+  
+}
+
+.proffits button img{
+    height: 1.2rem;
+    margin-left: 3rem;
+    vertical-align: middle;
+}
+
+
