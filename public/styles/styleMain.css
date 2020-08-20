@@ -3,17 +3,23 @@
   margin: 0;
   padding: 0;
 }
+h1,
+a,
+p,
+button,
+legend,
+label {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 button {
   background: #4455DD;
   border: none;
   color: #f2f2f2;
   border-radius: 0.2rem;
-  font-family: 'IBM Plex Sans', sans-serif;
 }
 a {
   text-decoration: none;
   color: #000000;
-  font-family: 'IBM Plex Sans', sans-serif;
 }
 html,
 body {
@@ -52,7 +58,6 @@ header {
   justify-content: space-between;
 }
 .invest-now h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 3rem;
   letter-spacing: 0.2rem;
   line-height: 3.5rem;
@@ -98,4 +103,72 @@ header {
   height: 1.2rem;
   margin-left: 3rem;
   vertical-align: middle;
+}
+.contact {
+  text-align: center;
+  margin-top: 3rem;
+}
+.contact-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.contact-img img {
+  height: 20rem;
+}
+.contact button {
+  height: 3rem;
+  width: 10rem;
+  margin-top: 2rem;
+}
+.testimony img {
+  width: 100%;
+  margin-top: 3rem;
+}
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -0.2rem;
+}
+.create-account h2 {
+  margin-top: 2rem;
+  text-align: center;
+  color: #4455DD;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.create-account fieldset {
+  border: none;
+  width: 50rem;
+  height: 22rem;
+  background: #F2F2F2;
+  text-align: center;
+}
+.create-account fieldset label {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.create-account fieldset input {
+  width: 20rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  background: #DDDDDD;
+  border: none;
+  border-radius: 0.2rem;
+}
+.create-account fieldset button {
+  width: 10rem;
+  height: 3rem;
+}
+.account .support {
+  margin-right: 7rem;
+}
+.account .support img {
+  height: 18rem;
+}
+.account .support p {
+  text-align: center;
+  margin-top: 2rem;
 }
