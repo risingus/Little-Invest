@@ -16,6 +16,7 @@ button {
   border: none;
   color: #f2f2f2;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -84,13 +85,26 @@ header {
 }
 .proffits {
   background: #ffffff;
-  height: 10rem;
+  height: 11rem;
   width: 15rem;
   border-radius: 0.4rem;
   border: 1px #4455DD;
 }
 .proffits p {
   margin-top: 0.7rem;
+  margin-left: 1rem;
+}
+.proffits .text-proffits {
+  color: #4455DD;
+}
+.proffits .text-bank {
+  color: #565656;
+}
+.banks .proffits .line {
+  border: 0;
+  border-top: 2px solid #9B9999;
+  width: 3rem;
+  margin-top: 0.5rem;
   margin-left: 1rem;
 }
 .proffits button {
@@ -134,7 +148,7 @@ header {
 .create-account h2 {
   margin-top: 2rem;
   text-align: center;
-  color: #4455DD;
+  color: #000000;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -169,4 +183,43 @@ header {
 .account .support p {
   text-align: center;
   margin-top: 2rem;
+}
+footer {
+  background: #000000;
+  display: flex;
+  align-items: top;
+  justify-content: space-evenly;
+  height: 13rem;
+}
+footer h1 {
+  color: #DDDDDD;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.map {
+  margin-left: 5rem;
+}
+.map .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+.social a img {
+  height: 3rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+footer p,
+a {
+  color: #565656;
+  margin-top: 0.5rem;
+}
+.footer {
+  background: #4455DD;
+  height: 3rem;
+}
+.footer p {
+  color: #DDDDDD;
+  padding-top: 1rem;
+  margin-left: 2rem;
 }

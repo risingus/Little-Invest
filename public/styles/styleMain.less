@@ -3,8 +3,11 @@
 @background-secondary-color: #F2F2F2;
 @text-primary-color: #000000;
 @text-secondary-color: #565656;
+@footer-text-color: #DDDDDD;
 @input-color: #DDDDDD;
 @button-text-color: #f2f2f2;
+@footer-color: #000000;
+@line-color: #9B9999;
 
 
 *{
@@ -22,6 +25,7 @@ button{
     border: none;
     color: @button-text-color;
     border-radius: .2rem;
+    cursor: pointer;
 }
 
 a{
@@ -104,17 +108,36 @@ header{
     height: 15rem;
 }
 
+
+
 .proffits {
     background: @background-primary-color;
-    height: 10rem;
+    height: 11rem;
     width: 15rem;
     border-radius: .4rem;
     border: 1px @primary-color;
 
 }
 
+
 .proffits p{
     margin-top: .7rem;
+    margin-left: 1rem;
+}
+
+.proffits .text-proffits{
+    color: @primary-color;
+}
+
+.proffits .text-bank {
+    color: @text-secondary-color;
+}
+
+.banks .proffits .line{
+    border: 0;
+    border-top: 2px solid @line-color;
+    width: 3rem;
+    margin-top: .5rem;
     margin-left: 1rem;
 }
 
@@ -167,7 +190,7 @@ header{
 .create-account h2{
     margin-top: 2rem;
     text-align: center;
-    color: @primary-color;
+    color: @text-primary-color;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
@@ -208,4 +231,53 @@ header{
 .account .support p{
     text-align: center;
     margin-top: 2rem;
+}
+
+footer {
+    background: @footer-color;
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    height: 13rem;
+}
+
+footer h1{
+    color: @footer-text-color ;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.map{
+    margin-left: 5rem;
+}
+
+.map .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.social a img{
+    height: 3rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+footer p, a {
+    color: @text-secondary-color;
+    margin-top: 0.5rem;
+    
+}
+
+
+.footer{
+    background: @primary-color;
+    height: 3rem;
+    
+}
+
+.footer p{
+    color: @footer-text-color;
+    padding-top: 1rem;
+    margin-left: 2rem;
 }
