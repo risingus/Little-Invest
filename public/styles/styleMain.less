@@ -45,11 +45,11 @@ header img{
 
 header{
     width: 100%;
+    padding: 1rem;
     background: @background-secondary-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     flex-wrap: wrap;
 }
 
@@ -62,7 +62,17 @@ header{
 .menu li {
     list-style: none;
     margin-left: 5rem;
- 
+}
+
+.menu li a{
+    padding: 8px;
+    border-radius: .2rem;
+}
+
+.menu li a:hover{
+    background: @primary-color;
+    color: @background-primary-color;
+    transition: .2s;
 }
 
 .menu li button{
@@ -259,6 +269,10 @@ footer h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
+}
+
+.map .grid a{
+    padding: 3px;
 }
 
 .social a img{
