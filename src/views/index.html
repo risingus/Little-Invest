@@ -10,17 +10,18 @@
 </head>
 <body>
 
-    <header class="header">
-        <img src="rsc/img/logo-little-invest.png" alt="logo-little-invest">
-        <nav>
-            <ul class="menu">
-                <li><a href="">Investimentos</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Contato</a></li>
-                <li><button>Cadastre-se</button></li>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <img src="rsc/img/logo-little-invest.png" alt="logo-little-invest" class="logo">
+            <ul class="menu" id="js-menu">
+                <li><a href="" class="menu-links">Investimentos</a></li>
+                <li><a href="" class="menu-links">Serviços</a></li>
+                <li><a href="" class="menu-links">Contato</a></li>
+                <li><a href="" class="menu-links">Cadastre-se</a></li>
             </ul>
-        </nav>
-    </header>
+    </nav>
 
     <div class="invest-now">
         <div>
@@ -134,5 +135,16 @@
          <p>Produzido por Gustavo Lima com ❤</p>
     </div>
     
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+    <script>
+        let mainNav = document.getElementById("js-menu")
+        let navBarToggle = document.getElementById("js-navbar-toggle")
+      
+        navBarToggle.addEventListener("click", function(){
+        mainNav.classList.toggle("active")
+      })
+    </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
   padding: 0;
 }
 h1,
+h2,
 a,
 p,
 button,
@@ -26,52 +27,51 @@ html,
 body {
   background: #ffffff;
 }
-header img {
-  height: 1.5rem;
-  margin-left: 3rem;
-}
-header {
-  width: 100%;
-  padding: 1rem;
+.navbar {
   background: #F2F2F2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .menu {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+.logo {
+  height: 1.5rem;
+  margin-left: 3rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #4455DD;
+  font-size: 30px;
+}
+.active {
+  display: block;
 }
 .menu li {
   list-style: none;
-  margin-left: 5rem;
+  margin: 15px auto;
+  text-align: center;
 }
 .menu li a {
   padding: 8px;
   border-radius: 0.2rem;
 }
-.menu li a:hover {
-  background: #4455DD;
-  color: #ffffff;
-  transition: 0.2s;
-}
-.menu li button {
-  margin-right: 3rem;
-  height: 2rem;
-  width: 6rem;
-}
 .invest-now {
   margin-top: 2rem;
   display: flex;
   align-items: top;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 .invest-now h1 {
-  font-size: 3rem;
-  letter-spacing: 0.2rem;
-  line-height: 3.5rem;
-  word-spacing: 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  word-spacing: 0.4rem;
   margin-left: 4rem;
 }
 .invest-now button {
@@ -82,22 +82,24 @@ header {
   margin-left: 4rem;
 }
 .invest-now img {
-  height: 20rem;
+  height: 10rem;
   margin-right: 4rem;
 }
 .banks {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   background: #4455DD;
-  height: 15rem;
+  height: 10.9rem;
+  overflow: hidden;
 }
 .proffits {
   background: #ffffff;
   height: 11rem;
-  width: 15rem;
+  width: 20rem;
   border-radius: 0.4rem;
   border: 1px #4455DD;
+  margin-top: 0.7rem;
 }
 .proffits p {
   margin-top: 0.7rem;
@@ -119,8 +121,9 @@ header {
 .proffits button {
   height: 2rem;
   width: 11rem;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 .proffits button img {
   height: 1.2rem;
@@ -133,11 +136,13 @@ header {
 }
 .contact-img {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 2rem;
 }
 .contact-img img {
-  height: 20rem;
+  width: 15rem;
 }
 .contact button {
   height: 3rem;
@@ -151,8 +156,9 @@ header {
 .account {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: -0.2rem;
+  background: #F2F2F2;
 }
 .create-account h2 {
   margin-top: 2rem;
@@ -163,11 +169,8 @@ header {
 }
 .create-account fieldset {
   border: none;
-  width: 50rem;
-  height: 22rem;
-  background: #F2F2F2;
   text-align: center;
-  margin-left: -10rem;
+  margin-bottom: 1rem;
 }
 .create-account fieldset label {
   margin-bottom: 0.5rem;
@@ -184,24 +187,28 @@ header {
 }
 .create-account fieldset input::placeholder {
   opacity: 0.5;
+  padding-left: 0.5rem;
 }
 .create-account fieldset button {
   width: 10rem;
   height: 3rem;
 }
 .account .support img {
-  height: 18rem;
+  width: 15rem;
+  display: none;
 }
 .account .support p {
   text-align: center;
   margin-top: 2rem;
+  display: none;
 }
 footer {
   background: #000000;
   display: flex;
   align-items: top;
   justify-content: space-evenly;
-  height: 13rem;
+  height: 14rem;
+  display: none;
 }
 footer h1 {
   color: #DDDDDD;
@@ -214,14 +221,13 @@ footer h1 {
 .map .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
 }
 .map .grid a {
   padding: 3px;
 }
 .social a img {
-  height: 3rem;
-  margin-right: 1rem;
+  height: 2rem;
+  margin-right: 0.2rem;
   margin-top: 1rem;
 }
 footer p,
@@ -237,4 +243,76 @@ a {
   color: #DDDDDD;
   padding-top: 1rem;
   margin-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu li {
+    margin: 0;
+  }
+  .menu-links {
+    margin-left: 40px;
+  }
+  .menu-links:hover {
+    background: #4455DD;
+    color: #ffffff;
+    transition: 0.2s;
+  }
+  .logo {
+    margin-top: 0.1rem;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .invest-now h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .invest-now img {
+    height: 20rem;
+  }
+  .banks {
+    overflow: show;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 12rem;
+  }
+  .proffits {
+    height: 10rem;
+    width: 11rem;
+  }
+  .proffits button {
+    width: 7rem;
+    margin-left: 1rem;
+  }
+  .proffits button img {
+    margin-left: 1rem;
+    height: 0.8rem;
+  }
+  .contact-img {
+    flex-direction: row;
+  }
+  .account {
+    justify-content: space-evenly;
+  }
+  .account .support img,
+  .account .support p {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+  }
 }
