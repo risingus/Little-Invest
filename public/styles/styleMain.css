@@ -173,6 +173,9 @@ header {
   border: none;
   border-radius: 0.2rem;
 }
+.create-account fieldset input::placeholder {
+  opacity: 0.5;
+}
 .create-account fieldset button {
   width: 10rem;
   height: 3rem;
