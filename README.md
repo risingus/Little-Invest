@@ -1,6 +1,6 @@
  <img src="https://github.com/risingus/Little-Invest/blob/master/readme.PNG" alt="project preview">
  <h1>💻 Project </h1>
- <p>A mobile-first landing page for an investment site.</p>
+ <p>A mobile-first static page for an investment site.</p>
  
 <h1>Used technologies</h1>
 <li><a href="https://www.w3schools.com/html/">HTML</a></li>
